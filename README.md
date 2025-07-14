@@ -1,23 +1,42 @@
-# 🦊 Connect Wallet Feature (React + Wagmi)
+# 🔌 React Wallet Connect (Wagmi + Zustand + TailwindCSS)
 
-A reusable and plug-and-play **React hook-based wallet connection module** powered by [Wagmi](https://wagmi.sh/) for Ethereum and EVM-compatible blockchains. Easily connect/disconnect wallets like MetaMask, WalletConnect, and more in your dApps.
+A **modular**, **framework-agnostic**, and fully **customizable wallet connection system** built with **React 19**, **Wagmi**, **Zustand**, and **TailwindCSS**, supporting Ethereum and EVM-compatible chains. Plug it into any React app to onboard users with MetaMask, WalletConnect, and more.
 
 ---
 
 ## ✨ Features
 
-- ✅ One-click connect wallet
-- 🔌 Supports MetaMask, WalletConnect, and other Wagmi connectors
-- 🔄 Automatic chain switching
-- ⚠️ Error handling with `react-hot-toast`
-- 💼 Ready-to-use `useWalletIntegration` hook
-- 💡 Easily pluggable into any React project
+- ✅ **Wallet Connect Integration** using `wagmi`
+- 🔄 **Chain switching** (Ethereum Mainnet, etc.)
+- 🧠 **State management** using [Zustand](https://github.com/pmndrs/zustand)
+- 🌐 **Global caching** via [TanStack Query](https://tanstack.com/query/latest)
+- 🔥 **Toasts & notifications** via `react-hot-toast`
+- 🎨 Built-in **TailwindCSS** & `antd` support for rapid UI building
+- 📦 Lightweight and modular hook-based design
+- 📲 **React Icons** for UI components
+- 🧭 Ready for `react-router` integration
 
 ---
 
-## 📦 Installation
+## 📦 Packages Used
 
-Clone the repository or copy the hook to your project:
+| Package                 | Purpose                            |
+|-------------------------|------------------------------------|
+| `wagmi`                 | Wallet connection, chain handling |
+| `zustand`               | Global store for wallet/user state |
+| `@tanstack/react-query`| Data fetching and caching |
+| `tailwindcss`           | Utility-first CSS |
+| `antd`                  | Ready-to-use UI components |
+| `react-hot-toast`       | Feedback and notifications |
+| `react-icons`           | Icon support |
+| `uuid`                  | Generate unique identifiers |
+| `react-router`          | SPA routing |
+| `vite`                  | Build tool (fast HMR) |
+
+---
+
+## 🛠️ Setup & Installation
 
 ```bash
 npm install
+npm run dev
